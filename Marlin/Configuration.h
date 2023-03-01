@@ -671,9 +671,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
 //50w Aquila
-    #define DEFAULT_Kp  13.19       
-    #define DEFAULT_Ki   0.77
-    #define DEFAULT_Kd  56.05
+    #define DEFAULT_Kp  36.90       
+    #define DEFAULT_Ki   4.75
+    #define DEFAULT_Kd  71.71
   #endif
 #endif
 
@@ -757,9 +757,9 @@
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
   // Aquila
-  #define DEFAULT_bedKp 128.06
-  #define DEFAULT_bedKi 24.95
-  #define DEFAULT_bedKd 438.07
+  #define DEFAULT_bedKp 117.23
+  #define DEFAULT_bedKi 22.17
+  #define DEFAULT_bedKd 413.33
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1488,7 +1488,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -40.0, -9.0, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -40.0, -9.0, -1.96 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
